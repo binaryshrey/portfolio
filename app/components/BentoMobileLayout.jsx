@@ -99,6 +99,33 @@ const BentoMobileLayout = () => {
         <GithubGraph />
       </SpotlightCard>
 
+      {/* Portfolio */}
+      <LinkCard
+        href={LINKS.PORTFOLIO}
+        target="_blank"
+        rel="noopener noreferrer"
+        ariaLabel="Open shreyanshsaurabh.com"
+        className="p-3 h-64 flex flex-col justify-between cursor-pointer"
+      >
+        <div className="rounded-xl overflow-hidden h-40">
+          <Image
+            src="/sp.webp"
+            alt="portfolio"
+            width={400}
+            height={200}
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
+        <h2 className="text-xl font-medium mt-2">Portfolio</h2>
+        <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
+          <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
+            <RiGlobalLine size={12} />
+            <p>shreyanshsaurabh.com</p>
+            <RiArrowRightUpLine size={12} />
+          </div>
+        </div>
+      </LinkCard>
+
       {/* Substack */}
       <LinkCard
         href={LINKS.SUBSTACK}
@@ -127,33 +154,6 @@ const BentoMobileLayout = () => {
           </div>
         </div>
         <div></div>
-      </LinkCard>
-
-      {/* Portfolio */}
-      <LinkCard
-        href={LINKS.PORTFOLIO}
-        target="_blank"
-        rel="noopener noreferrer"
-        ariaLabel="Open shreyanshsaurabh.com"
-        className="p-3 h-64 flex flex-col justify-between cursor-pointer"
-      >
-        <div className="rounded-xl overflow-hidden h-40">
-          <Image
-            src="/sp.webp"
-            alt="portfolio"
-            width={400}
-            height={200}
-            className="w-full h-full object-cover object-top"
-          />
-        </div>
-        <h2 className="text-xl font-medium mt-2">Portfolio</h2>
-        <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
-          <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
-            <RiGlobalLine size={12} />
-            <p>shreyanshsaurabh.com</p>
-            <RiArrowRightUpLine size={12} />
-          </div>
-        </div>
       </LinkCard>
 
       {/* Background (div -> SpotlightCard) */}
